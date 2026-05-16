@@ -1,6 +1,7 @@
 import pandas as pd
+from pathlib import Path
 
-archivo = "historial.csv"
+archivo = Path(__file__).resolve().parent / "historial.csv"
 
 try:
     df = pd.read_csv(
